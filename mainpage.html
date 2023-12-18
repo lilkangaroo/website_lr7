@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Лабораторная работа №7, ПИЭ-01, АлтГТУ">
+    <meta name="author" content="Коваленко А.А. ПИЭ-01">
+
+    <title>Студия дрессировки "Дай лапу"</title>
+    <link rel="Shortcut Icon" href="pictures/icon.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Верхний раздел страницы -->
+    <header>
+        <div class="top-section">
+
+            <div class="logo">
+                <img src="pictures/logo.jpg" alt="Логотип">
+            </div>
+
+            <div class="center-image">
+                <img src="pictures/lapa.jpg" alt="Дай лапу">
+            </div>
+
+            <div class="action-container">
+                <a href="#" target="_blank">
+                    <img src="pictures/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="pictures/telegram.png" alt="Telegram">
+                </a>
+            </div>
+
+        </div>
+        <nav class="main-menu" id="mainMenu">
+            <ul>
+                <li><a href="#section1">Главная</a></li>
+                <li><a href="#section3">О нас</a></li>
+                <li><a href="#section4">Услуги</a></li>
+                <li><a href="#section5">Контакты</a></li>
+              </ul>
+        </nav>
+    </header>
+
+    <!-- Основное содержание страницы -->
+    <section id="section1">
+        <article>
+            <h2>СТУДИЯ <br> ДРЕССИРОВКИ <br> СОБАК </h2>
+            <p> <img src="pictures/peps.png" alt="Full Width Image">
+            </p>
+        </article>
+    </section>
+
+    <section id="section2">
+        <article>
+            <h2>Если вас интересует профессиональная дрессировка собак, то студия дрессировки собак "Дай лапу" – это то, что вам нужно!</h2>
+        </article>
+    </section>
+
+    <section id="section3">
+        <article>
+            <div class="content">
+                <div class="text">
+                    <h2>О НАС</h2>
+                    <p>Дай лапу — это небольшая команда спецов-кинологов. <br>
+                        Каждый день мы сталкиваемся с различными кейсами<br>
+                        и делаем свою работу круто</p>
+                </div>
+                <img src="pictures/peps1.png">
+            </div>
+        </article>
+    </section>
+
+    <section id="section4">
+        <h2>УСЛУГИ</h2>
+        <article>
+            <div class="container">
+                <img src="pictures/ind.jpg" alt="individual">
+                <div class="container-content">
+                    <h3>Индивидуальные занятия</h3>
+                    <p>
+                        Занятие в зале
+                        <br>
+                        Выезда кинолога на дом
+                        <br>
+                        Курс "Воспитание щенка"
+                        <br>
+                        Онлайн занятие
+                    </p>
+                </div>
+            </div>
+
+            <div class="container">
+                <img src="pictures/group.jpg" alt="group">
+                <div class="container-content">
+                    <h3>Групповые занятия</h3>
+                    <p>
+                        Для щенков (курс 7+1)
+                        <br>
+                        Для продвинутых
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <img src="pictures/pered.jpg" alt="perederzka">
+                <div class="container-content">
+                    <h3>Занятия на передержке</h3>
+                    <p>
+                        Домашнее обучение
+                        <br>
+                        Фитнес
+                        <br>
+                        Детский сад
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="section5">
+        <article>
+            <h2>Контакты</h2>
+            <div class="contact-buttons">
+                 <a href="#" class="contact-button" target="_blank">
+                    <img src="pictures/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="#" class="contact-button" target="_blank">
+                    <img src="pictures/telegram.png" alt="Telegram">
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <section id="section6">
+        <article>
+            <input type="text" placeholder="Введите ID" id="post__user" class="creator">
+            <button class="show_all_btn">Вывод</button>
+            
+            <div class="wrapper">
+                <div class="posts_list"></div>
+            </div>
+        </article>
+    </section>
+
+    <!-- подключение скриптов -->
+
+    <script src="script.js"></script>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+      
+        var header = document.getElementById("mainMenu");
+        var sticky = header.offsetTop;
+      
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+      </script>
+
+    <!-- Подвал страницы -->
+    <footer>
+        <p>&copy; 2023 ПИЭ-01 Коваленко А.А.</p>
+    </footer>
+
+</body>
+</html>
